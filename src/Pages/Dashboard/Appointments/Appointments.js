@@ -13,7 +13,7 @@ const Appointments = ({ date }) => {
   const [appointments, setAppointments] = useState([]);
 
   useEffect(() => {
-    const url = `http://localhost:5000/appointments?email=${
+    const url = `https://medise-server-side.herokuapp.com/appointments?email=${
       user.email
     }&date=${date.toLocaleDateString()}`;
     fetch(url, {
