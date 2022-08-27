@@ -48,15 +48,15 @@ function Dashboard(props) {
     <div>
       <Toolbar />
       <Divider />
-      <Link to="/appointment"><Button color="inherit">Appointment</Button></Link>
-      <Link to={`${url}`}><Button color="inherit">Dashboard</Button></Link>
+      <Link style={{ textDecoration: "none", color: "black"  }} to="/appointment"><Button color="inherit" style={{marginTop:"5px"}}>Appointment</Button></Link>
+      <Link style={{ textDecoration: "none", color: "black" }} to={`${url}`}><Button color="inherit">Dashboard</Button></Link>
       {
         admin && <Box>
-          <Link to={`${url}/makeAdmin`}><Button color="inherit">Make Admin</Button></Link>
-          <Link to={`${url}/addDoctor`}><Button color="inherit">Add Doctor</Button></Link>
+          <Link style={{ textDecoration: "none", color: "black" }} to={`${url}/makeAdmin`}><Button color="inherit">Make Admin</Button></Link>
+          <Link style={{ textDecoration: "none", color: "black" }} to={`${url}/addDoctor`}><Button color="inherit">Add Doctor</Button></Link>
         </Box>
       }
-      <List>
+      {/* <List>
         {['Appointment', 'Dashboard', 'Make Admin', 'Add Doctor'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
@@ -76,11 +76,11 @@ function Dashboard(props) {
                   elseif(text==='Add Doctor'){
                       <Link to={`${url}/addDoctor`}><Button color="inherit">Add Doctor</Button></Link>
                   } */}
-              </ListItemText>
+              {/* </ListItemText>
             </ListItemButton>
           </ListItem>
         ))}
-      </List>
+      </List> */}
       
     </div>
   );

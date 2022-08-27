@@ -25,9 +25,10 @@ const AppointmentBanner = () => {
                     display: 'flex',
                     justifyContent: 'flex-start',
                     alignItems: 'center',
-                    textAlign: 'left'
+                    textAlign: 'left',
+                    
                 }}>
-                    <Box>
+                    <Box sx={{marginLeft:'5px'}}>
                         <Typography variant="h6" sx={{ mb: 5 }} style={{ color: '#5CE7ED' }}>
                             Appointment
                         </Typography>
@@ -35,8 +36,8 @@ const AppointmentBanner = () => {
                             Make an Appointment Today
                         </Typography>
                         <Typography variant="h6" sx={{ my: 5 }} style={{ color: 'white', fontSize: 14, fontWeight: 300 }}>
-                        It is long es fact that a reader will be distractedby the readable
-              content of a page when looking at its
+                            It is long es fact that a reader will be distractedby the readable
+                            content of a page when looking at its
                         </Typography>
                         <Button variant="contained" style={{ backgroundColor: '#5CE7ED' }}>Learn More</Button>
                     </Box>

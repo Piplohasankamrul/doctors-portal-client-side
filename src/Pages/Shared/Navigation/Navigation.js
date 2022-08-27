@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import MedicationIcon from '@mui/icons-material/Medication';
 import { Link, NavLink } from 'react-router-dom';
 import useAuth from './../../../hooks/useAuth';
 
@@ -22,12 +23,16 @@ const Navigation = () => {
                         aria-label="menu"
                         sx={{ mr: 2 }}
                     >
-                        <MenuIcon />
+                        <MedicationIcon />
                     </IconButton>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        Doctors Portal
-                    </Typography>
-                    <Link to="/appointment"><Button color="inherit">Appointment</Button></Link>
+                    
+                        <Link style={{ textDecoration: "none", color: "white",fontWeight:600 ,fontSize: '20px'}} to="/">
+                            Doctors Portal
+                        </Link>
+                    
+                    
+                    <Box sx={{marginLeft:"auto" ,display:'flex'}}>
+                    <Link style={{ textDecoration: "none", color: "white" }} to="/appointment"><Button color="inherit">Appointment</Button></Link>
                     {
                         user?.email ?
                         <Box>
@@ -41,6 +46,7 @@ const Navigation = () => {
                                 <Button color="inherit">Login</Button>
                             </NavLink>
                     }
+                    </Box>
                 </Toolbar>
             </AppBar>
         </Box>

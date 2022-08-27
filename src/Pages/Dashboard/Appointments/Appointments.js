@@ -31,7 +31,7 @@ const Appointments = ({ date }) => {
     <div>
       <h2>Appointments : {appointments.length}</h2>
       <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 650 }} aria-label="Appointments table">
+        <Table sx={{ minWidth: '100%' }} md={{ minWidth: 650 }} aria-label="Appointments table">
           <TableHead>
             <TableRow>
               <TableCell>Name</TableCell>
