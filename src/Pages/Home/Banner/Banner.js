@@ -28,7 +28,9 @@ const Banner = () => {
                             Starts Here
                         </Typography>
                         <Typography variant="h6" sx={{ my: 3, fontSize: 13, fontWeight: 300, color: 'gray' }}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil asperiores velit illum enim incidunt doloremque vitae impedit at accusantium tenetur.
+                        Smiles are contagious so go forth and contaminate as many people
+              as you can! Be the reason someone smiles today! A genuine smile
+              comes from the heart, but a healthy smile needs good dental care.
                         </Typography>
                         <Button variant="contained" style={{ backgroundColor: '#5CE7ED' }}>Get Appointment</Button>
                     </Box>
